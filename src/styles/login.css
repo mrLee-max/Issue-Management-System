@@ -1,0 +1,112 @@
+/* login.css */
+:root {
+  --primary: #10b935;   /* blue */
+  --secondary: #3f534c; /* green */
+  --accent: #b5ceb5;    /* yellow/orange */
+}
+
+/* 🔹 Full-page background and centering */
+.auth-page {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, var(--primary), var(--secondary)), url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e") no-repeat center center/cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔹 Main container */
+.container-login100 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🔹 Login box */
+.wrap-login100 {
+  width: 400px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Title */
+.login100-form-title {
+  display: block;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* 🔹 Input fields */
+.wrap-input100 {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input100 {
+  width: 80%;
+  padding: 12px 40px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.input100:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
+}
+
+
+/* 🔹 Icon inside input */
+.symbol-input100 {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #888;
+}
+
+/* 🔹 Button */
+.login100-form-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff7f50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login100-form-btn {
+  background: var(--primary);
+}
+
+.login100-form-btn:hover {
+  background: var(--secondary);
+}
+
+
+.text-center a {
+  color: var(--primary);
+}
+
+.text-center a:hover {
+  color: var(--secondary);
+}
+
+.text-center a:hover {
+  text-decoration: underline;
+}

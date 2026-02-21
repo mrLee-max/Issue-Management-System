@@ -1,0 +1,138 @@
+/* === Dashboard Layout === */
+.dashboard {
+  display: flex;
+  background-color: #f9fafb; /* gray-50 */
+  min-height: 100vh;
+}
+
+/* === Main Area === */
+.dashboard main {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* === Header === */
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #1f2937; /* gray-800 */
+}
+
+.dashboard-header p {
+  color: #6b7280; /* gray-500 */
+}
+
+.refresh-btn {
+  background-color: #20a117f5;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.refresh-btn:hover {
+  background-color: #ea580c;
+  transform: scale(1.05);
+}
+
+/* === Summary Cards === */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.card {
+  color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card p {
+  font-size: 1.125rem;
+}
+
+.card h2 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  font-weight: 700;
+}
+
+/* === Card Color Variants === */
+.card.orange {
+  background: linear-gradient(to right, #fb923c, #f97316);
+}
+
+.card.sky {
+  background: linear-gradient(to right, #38bdf8, #0284c7);
+}
+
+.card.amber {
+  background: linear-gradient(to right, #fbbf24, #f59e0b);
+}
+
+.card.green {
+  background: linear-gradient(to right, #24fb52, #ffff62);
+}
+
+.card.red {
+  background: linear-gradient(to right, #f11a1a, #ffe1a5);
+}
+
+/* === Charts === */
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.chart-box {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.chart-box:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.chart-box h2 {
+  text-align: center;
+  font-weight: 600;
+  color: #374151; /* gray-700 */
+  margin-bottom: 1rem;
+}
+.reset-btn {
+  background-color: #e5e7eb;
+  color: #111827;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.reset-btn:hover {
+  background-color: #d1d5db;
+}

@@ -1,0 +1,195 @@
+/* ============================
+   Customers Page Styling
+   ============================ */
+
+.customers-container {
+  padding: 2rem;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== Header Section ===== */
+.customers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.customers-header h1 {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.add-btn {
+  background-color: #20a117f5;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+
+.add-btn:hover {
+  background-color: #2e312e;
+}
+
+/* ===== Table Styling ===== */
+.customers-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customers-table thead {
+  background-color: #20a117f5;
+  color: white;
+  text-align: left;
+}
+
+.customers-table th,
+.customers-table td {
+  padding: 0.9rem 1rem;
+}
+
+.customers-table th {
+  font-weight: 600;
+}
+
+.customers-table tr {
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+
+.customers-table td ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: disc;
+  color: #555;
+}
+
+.customers-table td span {
+  font-style: italic;
+  color: #aaa;
+}
+
+/* ===== Action Buttons ===== */
+.action-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.action-btn.edit {
+  color: #2563eb;
+}
+
+.action-btn.edit:hover {
+  color: #1d4ed8;
+}
+
+.action-btn.delete {
+  color: #ef4444;
+}
+
+.action-btn.delete:hover {
+  color: #dc2626;
+}
+
+/* ===== Modal Overlay ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+/* ===== Modal Box ===== */
+.modal-box {
+  background-color: white;
+  padding: 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  width: 380px;
+  max-width: 95%;
+}
+
+.modal-box h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* ===== Form Inputs ===== */
+.modal-box form input {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.6rem;
+  margin-bottom: 0.9rem;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.modal-box form input:focus {
+  border-color: #f97316;
+  outline: none;
+}
+
+/* ===== Modal Buttons ===== */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6rem;
+}
+
+.cancel-btn {
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #555;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cancel-btn:hover {
+  background-color: #f3f3f3;
+}
+
+.submit-btn {
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #ea580c;
+}
+
+.action-btn.view {
+  background-color: #20a117f5; /* amber-500 */
+  color: white;
+}
+
+.action-btn.view:hover {
+  background-color: #d97706; /* darker amber */
+}
+

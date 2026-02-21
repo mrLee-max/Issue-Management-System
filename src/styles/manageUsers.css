@@ -1,0 +1,165 @@
+/* manageUsers.css */
+
+/* Main container */
+.manage-users-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f3f4f6; /* light gray */
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Inner content area */
+.manage-users-content {
+  flex: 1;
+}
+
+/* Headings */
+.manage-users-content h1 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #1f2937; /* dark gray */
+  margin-bottom: 1.5rem;
+}
+
+.manage-users-content h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+/* Forms */
+.add-user-form {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Form inputs */
+.add-user-form input,
+.add-user-form select {
+  border: 1px solid #d1d5db; /* gray-300 */
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Buttons in form */
+.add-user-form button {
+  padding: 0.5rem 1rem;
+  background-color: #20a117f5; /* orange-600 */
+  color: #ffffff;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-user-form button:hover {
+  background-color: #20a117f5; /* orange-700 */
+}
+
+/* Image upload section */
+.input-with-button {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-with-button label {
+  font-weight: 600;
+  color: #111827;
+}
+
+.input-with-button img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #d1d5db;
+  margin-bottom: 0.5rem;
+}
+
+/* Table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.user-table th,
+.user-table td {
+  padding: 0.75rem;
+  border: 1px solid #e5e7eb; /* gray-200 */
+  text-align: left;
+}
+
+.user-table th {
+  background-color: #e5e7eb;
+  font-weight: 600;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.user-table img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-table button {
+  padding: 0.25rem 0.5rem;
+  background-color: #25a2eb; /* red-500 */
+  margin-left: 10px;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.user-table .btn-delete{
+  padding: 0.25rem 0.5rem;
+  background-color: #ef4444; /* red-500 */
+  margin-left: 10px;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.user-table button:hover {
+  background-color: #dc2626; /* red-600 */
+}
+
+.user-table td.capitalize {
+  text-transform: capitalize;
+}
+
+.user-table td.text-center {
+  text-align: center;
+}
+
+.no-users {
+  text-align: center;
+  color: #6b7280; /* gray-500 */
+  padding: 1rem 0;
+}
